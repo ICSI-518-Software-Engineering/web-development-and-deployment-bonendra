@@ -22,7 +22,7 @@ const Operations=()=>
         var val2=parseInt(inp2.current.value,10);
         console.log(val1,val2);
 
-        fetch("http://localhost:8080/addition",
+        fetch("http://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#Instances:instanceId=i-06f80ca7a6363fbcc:8080/addition",
         {
             method:'POST',
             headers:{"Content-Type":"application/json"},

@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.255802b2.css",
+    "main.js": "/static/js/main.1dfed47b.js",
+    "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
+    "static/media/KBR.png": "/static/media/KBR.b3a1ee92871e7293ee61.png",
+    "static/media/logo2.jpg": "/static/media/logo2.858d131b307ef9005e05.jpg",
+    "index.html": "/index.html",
+    "main.255802b2.css.map": "/static/css/main.255802b2.css.map",
+    "main.1dfed47b.js.map": "/static/js/main.1dfed47b.js.map",
+    "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.255802b2.css",
+    "static/js/main.1dfed47b.js"
+  ]
+}
