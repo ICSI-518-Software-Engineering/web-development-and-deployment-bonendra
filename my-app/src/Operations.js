@@ -22,7 +22,7 @@ const Operations=()=>
         var val2=parseInt(inp2.current.value,10);
         console.log(val1,val2);
 
-        fetch("http://ec2-3-15-16-47.us-east-2.compute.amazonaws.com:8080/addition",
+        fetch("http://ec2-3-141-20-111.us-east-2.compute.amazonaws.com:8080/addition",
         {
             method:'POST',
             headers:{"Content-Type":"application/json"},
