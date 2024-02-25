@@ -1,0 +1,89 @@
+.probox
+{
+    padding-left:30px;
+    padding-top:12px;
+    padding-bottom:10px;
+    
+}
+
+.namebox
+{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+label{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.inp1
+{
+    margin-left:35px;
+    border:1px solid rgb(198, 41, 41);
+    margin-bottom: 40px;
+}
+
+.inp2
+{
+    margin-left:35px;
+    border:1px solid rgb(213, 44, 44);
+    margin-bottom: 40px;
+}
+
+.buttonbox
+{
+    margin-top:50px;
+}
+
+input[type="submit"]
+{
+    font-size:15px;
+    margin-left:10px;
+}
+
+.resbox
+{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+    color: black;
+}
+
+img{
+    width:300px;
+    height:300px;
+    object-fit: cover;
+}
+
+.desbox
+{
+    font-size:30px;
+}
+
+.backendbutton
+{
+    margin-left:25px;
+}
+
+.logo
+{
+    font-size: 25px;;
+}
+/* App.css */
+
+/* Add the following styles for the frontendRES and backendRES buttons */
+.buttonbox input {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .resbox {
+    margin-top: 20px;
+  }
+  
+  
