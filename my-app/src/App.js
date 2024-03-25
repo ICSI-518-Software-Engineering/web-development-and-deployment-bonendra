@@ -1,42 +1,41 @@
-import Profile from './Profile.js';
-import Operation from './Operations.js';
-import Header from './Header.js';
-import { useState } from 'react';
+import React, { useState } from 'react';
+import Header from './Header';
+import Profile from './Profile';
+import Operations from './Operations';
+import Inventory from './inventory';
+import Food from './food'; // Import Food component
+import './App.css';
 
-const App=()=>{
- 
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('profile');
 
-  const [isprofile,setisprofile]=useState(true);
-  const [isoperations,setisoperations]=useState(false);
-
-  const profile=(status)=>
-  {
-    setisoperations(false);
-    setisprofile(true);
-
-    
-
-
+  const handleProfileClick = () => {
+    setCurrentPage('profile');
   };
 
-  const Operations=()=>
-  {
-    setisoperations(true);
-    setisprofile(false)
-
+  const handleOperationsClick = () => {
+    setCurrentPage('operations');
   };
-  
 
+  const handleInventoryClick = () => {
+    setCurrentPage('inventory');
+  };
+
+  const handleFoodClick = () => {
+    setCurrentPage('food');
+  };
 
   return (
-    <div className="container">
-      <Header profile={profile} operations={Operations}/>
-      {isprofile && <Profile /> }
-     {isoperations && <Operation /> } 
+    <div>
+      <Header profile={handleProfileClick} operations={handleOperationsClick} inventory={handleInventoryClick} food={handleFoodClick} />
+      <div className="container">
+        {currentPage === 'profile' && <Profile />}
+        {currentPage === 'operations' && <Operations />}
+        {currentPage === 'inventory' && <Inventory />}
+        {currentPage === 'food' && <Food />}
+      </div>
     </div>
-  )
-    
+  );
 };
-  
 
 export default App;
