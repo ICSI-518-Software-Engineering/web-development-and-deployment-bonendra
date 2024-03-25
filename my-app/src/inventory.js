@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { fileToBase64 } from "file64"
 
-const BASE_URL= process.env.NODE_ENV === "development" ? "http://localhost:8080" : "";
+const BASE_URL= process.env.NODE_ENV === "development" ? "http://ec2-18-219-58-199.us-east-2.compute.amazonaws.com:8080" : "";
 
 const Inventory = () => {
   const [inventory, setInventory] = useState([]);
